@@ -14,7 +14,7 @@ But you could use this file as example, how your file should be build.
 
 If you break the PHP Syntax and integrate an Error in this file, no Workflow could be executed, because this files are included in most tasks!
 
-Example, which is currently integrated in Core:		
+Example, which is currently integrated in Core:	
 
 ```
 if(!function_exists("wf_date")) {
@@ -29,3 +29,5 @@ if(!function_exists("wf_date")) {
     }
 }
 ```
+
+See here: https://github.com/swarnat/Workflow-Designer-Developer/blob/master/extends/functions/core.inc.php
