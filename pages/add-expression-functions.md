@@ -15,3 +15,17 @@ But you could use this file as example, how your file should be build.
 If you break the PHP Syntax and integrate an Error in this file, no Workflow could be executed, because this files are included in most tasks!
 
 Example, which is currently integrated in Core:		
+
+```
+if(!function_exists("wf_date")) {
+    function wf_date($value, $interval, $format = "Y-m-d") {
+        if(empty($interval)) {
+            $dateValue = strtotime($value);
+        } else {
+            $dateValue = strtotime($interval, strtotime($value));
+        }
+ 
+        return date($format, $dateValue);
+    }
+}
+```
