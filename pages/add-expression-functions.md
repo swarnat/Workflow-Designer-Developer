@@ -5,7 +5,7 @@
 Sometimes you want to integrate a function which will too complexe or big to integrate in a simple text field. 
 For this you should create your own PHP functions.
 
-**VtigerCRM 5.x**: Create a new file inside modules/Workflow2/functions/ with the filename <individual>.inc.php
+**VtigerCRM 5.x**: Create a new file inside modules/Workflow2/functions/ with the filename <individual>.inc.php  
 **VtigerCRM 6.x**: Create a new file inside modules/Workflow2/extends/functions/ with the filename <individual>.inc.php
 
 All functions with the nameprefix **wf_** you define in this file, will be available during custom expressions without any further modifications.
@@ -15,7 +15,7 @@ But you could use this file as example, how your functions should be build.
 
 ##### If you break the PHP Syntax and integrate an Error in this file, no Workflow could be executed, because this files are included in most tasks!
 
-//Example, which is currently integrated in Core://
+*Example, which is currently integrated in Core:*
 
 ```php
 if(!function_exists("wf_date")) {
